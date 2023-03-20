@@ -6,4 +6,4 @@ snakeX+=velocityX;snakeY+=velocityY;for(let i=snakeBody.length-1;i>0;i--){snakeB
 snakeBody[0]=[snakeX,snakeY];if(snakeX<=0||snakeX>30||snakeY<=0||snakeY>30){return gameOver=true;}
 for(let i=0;i<snakeBody.length;i++){html+=`<div class="head"style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;if(i!==0&&snakeBody[0][1]===snakeBody[i][1]&&snakeBody[0][0]===snakeBody[i][0]){gameOver=true;}}
 playBoard.innerHTML=html;}
-updateFoodPosition();setIntervalId=setInterval(initGame,250);document.addEventListener("keyup",changeDirection);
+updateFoodPosition();setIntervalId=setInterval(initGame,150);document.addEventListener("keyup",changeDirection);
