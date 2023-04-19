@@ -27,7 +27,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: update
         run: sudo apt-get update
